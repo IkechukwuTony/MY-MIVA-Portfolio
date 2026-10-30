@@ -3,8 +3,8 @@
  * Ikechukwu Tony Portfolio
  */
 (function() {
-    // Initialize EmailJS
-    emailjs.init("TVOQWl_otlyxRQaJs");
+    // Initialize EmailJS, (Public Key)
+    emailjs.init("pPPyX3IAlVwyD7B72");
 
     const form = document.getElementById('contact-form');
     if (!form) return;
@@ -91,8 +91,8 @@
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // Send form data via EmailJS
-        emailjs.sendForm("service_ga3i60j", "template_ys8m6j2", form)
+        // Send form data via EmailJS, (Service ID, Template ID) 
+        emailjs.sendForm("service_yqg2r02", "template_vtrtu2d", form)
             .then(function() {
                 if (success) {
                     success.style.display = 'block';
