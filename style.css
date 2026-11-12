@@ -476,17 +476,23 @@ p {
     padding: 1rem;
 }
 
-.art-1 {
-    background: linear-gradient(135deg, #f59e0b, #b45309);
+
+.project .art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops the image cleanly instead of stretching it */
+  object-position: center; /* Keeps the focal point centered */
+  display: block; /* Removes the tiny default whitespace gap below images */
+  transition: transform 0.3s ease;
 }
 
-.art-2 {
-    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+/* Optional subtle zoom effect when hovering over the project card */
+.project:hover .art img {
+  transform: scale(1.05);
 }
 
-.art-3 {
-    background: linear-gradient(135deg, #10b981, #047857);
-}
+
+
 
 .art-4 {
     background: linear-gradient(135deg, #8b5cf6, #6d28d9);
